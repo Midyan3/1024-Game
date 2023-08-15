@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-/*Board::Board(){
+Board::Board(){
     max = 0;
     target = 32;
     numRows = 3;
@@ -52,7 +52,7 @@ Board::~Board(){
     }
     delete[] panel;
     panel = nullptr;
-}*/
+}
 
 void Board::print() const{
     for (int i = 0; i < numRows; i++){
@@ -74,7 +74,7 @@ void Board::print() const{
 	cout << "+" << endl;
 }
 
-/*void Board::selectRandomCell(int& row, int& col){
+void Board::selectRandomCell(int& row, int& col){
     int empty_cells = 0;
     vector<int> v;
     for(int i = 0; i < numRows; i++){
@@ -116,7 +116,7 @@ bool Board::noAdjacentSameValue() const{
     if(max < target){
         return true;
     }
-}*/
+}
 
 void Board::pressLeft(){
     for (int i = 0; i < numRows; i++){
